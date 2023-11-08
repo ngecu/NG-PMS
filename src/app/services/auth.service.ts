@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { userLogin } from '../interfaces/login';
-import { user } from '../interfaces/user';
+import { User } from '../interfaces/user';
 
 @Injectable({
   providedIn: 'root'
@@ -25,7 +25,7 @@ export class AuthService {
     return data
   }
 
-  async registerEmployee (user: user){
+  async registerEmployee (user: User){
     let response = await fetch('http://localhost:5000/user/register', {
       headers:{
         "Content-Type": "application/json"

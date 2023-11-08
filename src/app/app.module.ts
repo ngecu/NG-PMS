@@ -13,6 +13,8 @@ import { AddProjectsComponent } from './pages/add-projects/add-projects.componen
 import { AllUsersComponent } from './pages/all-users/all-users.component';
 import { AddUserComponent } from './pages/add-user/add-user.component';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { UserDashboardComponent } from './pages/user-dashboard/user-dashboard.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { ProfileComponent } from './pages/profile/profile.component';
     AddProjectsComponent,
     AllUsersComponent,
     AddUserComponent,
-    ProfileComponent
+    ProfileComponent,
+    UserDashboardComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
