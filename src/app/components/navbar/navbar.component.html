@@ -1,0 +1,70 @@
+<div class="sidebar">
+    <div class="logo">
+        <img src="static/images/logo.svg" alt="">
+    </div>
+
+    <hr>
+
+    <div class="profile-container">
+        <div class="profile-image-container">
+            <img src="static/images/profile.png" alt="">
+        </div>
+        <div class="user-name-container">
+            <p>Full Username</p>
+        </div>
+    </div>
+    
+
+    <hr>
+
+  
+        <a  routerLink="/register" >
+          
+            <i class="fa-solid fa-gauge"></i>
+           Dashboard
+        
+        </a>
+
+
+
+    <div class="menu">
+        <h2>PROJECTS</h2>
+        <ul>
+            <li><a  routerLink="/all_projects">
+                <i class="fa-solid fa-border-all"></i>
+                All Projects</a></li>
+            <li>
+                <a  routerLink="/add_project">
+                    <i class="fa-solid fa-plus"></i>
+                Add Project
+            </a>
+        </li>
+           
+        </ul>
+
+        <h2>USERS</h2>
+        <ul>
+            <li><a  routerLink="/all_users">
+                <i class="fa-solid fa-users"></i>
+                All Users</a>
+            </li>
+            <li><a  routerLink="/add_user">
+                <i class="fa-solid fa-plus"></i>
+                Add User</a>
+            </li>
+            
+        </ul>
+
+        <h2>PROFILE</h2>
+        <ul>
+            <li><a  routerLink="/profile">
+                <i class="fa-solid fa-address-card"></i>
+                My Profile</a></li>
+            
+        </ul>
+
+        <button  (click)="Logout()" class="logout-btn">
+           LOGOUT
+        </button>
+
+    </div>
